@@ -18,7 +18,7 @@ for (int rows = 0; rows>2; rows++)
 
 void Z2 () 
 {
-string [,] table = new string[2, 5];
+int [,] table = new int[2, 5];
 for (int bar = 0; bar>2; bar++) 
 {
     for (int col = 0; col < 5; col++) 
