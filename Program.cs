@@ -10,11 +10,8 @@ for (int rows = 0; rows < 2; rows++)
     }
     Console.WriteLine("");
 }
-
+Z1();
 }
-// table[2, 3] = "воо";
-
-// }
 
 void Z2 () 
 {
@@ -27,11 +24,9 @@ for (int bar = 0; bar < 2; bar++)
     }
     Console.WriteLine("");
 }
-
+Z2();
 }
-// table[2, 3] = "воо";
 
-// }
 void Z3() 
 {
     int [,] table = new int[25, 22];
@@ -46,25 +41,25 @@ for (int bar = 0; bar < 25; bar++)
     Console.WriteLine("");
 }
 }
+Z3();
 
 double Z4(int n) 
-//Console.WriteLine("Введите число: ");
 {
     if(n == 1) return 1;
     else return n + Z4(n-1);
 }
+//Console.WriteLine("Введите число: ");
 for (int i = 1; i < 40; i++) 
 {
     Console.WriteLine(Z4(i));
 }
-//Z4(n);
-int Z5(int n) 
+
+int Z5(int n) // числа Фибоначчи
 {
-if(n == 1 || n == 2) return 1;
-else return Z5(n-1) + Z5(n-2);
+    if(n == 1 || n == 2) return 1;
+    else return Z5(n-1) + Z5(n-2);
 }
-
-Z1();
-Z2();
-Z3();
-
+for (int i = 1; i< 10; i++) 
+{
+    Console.WriteLine(Z5(i));
+}
