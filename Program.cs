@@ -47,10 +47,15 @@ for (int bar = 0; bar < 25; bar++)
 }
 }
 
-int Z4(int n) 
+double Z4(int n) 
+//Console.WriteLine("Введите число: ");
 {
     if(n == 1) return 1;
     else return n + Z4(n-1);
+}
+for (int i = 0; i < 40; i++) 
+{
+    Console.WriteLine(Z4(i));
 }
 //Z4(n);
 Z3();
