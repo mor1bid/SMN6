@@ -11,9 +11,8 @@ for (int rows = 0; rows < 2; rows++)
     }
     Console.WriteLine("");
 }
-Z1();
 }
-
+Z1();
 void Z2 () 
 {
 Console.WriteLine("2. ");
@@ -26,8 +25,8 @@ for (int bar = 0; bar < 2; bar++)
     }
     Console.WriteLine("");
 }
-Z2();
 }
+Z2();
 
 void Z3() 
 {
