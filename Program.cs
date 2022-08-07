@@ -32,8 +32,22 @@ for (int bar = 0; bar < 2; bar++)
 // table[2, 3] = "воо";
 
 // }
+void Z3() 
+{
+    int [,] table = new int[25, 22];
+for (int bar = 0; bar < 25; bar++) 
+{
+    for (int col = 0; col < 22; col++) 
+    {
+        Console.Write($"{table[bar, col]} ");
+        if(table[bar, col] == 0) Console.Write($"");
+        else Console.Write($"+");
+    }
+    Console.WriteLine("");
+}
+}
 
+Z3();
 Z2();
-
 Z1();
 
