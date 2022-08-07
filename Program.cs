@@ -58,7 +58,13 @@ for (int i = 1; i < 40; i++)
     Console.WriteLine(Z4(i));
 }
 //Z4(n);
-Z3();
-Z2();
+int Z5(int n) 
+{
+if(n == 1 || n == 2) return 1;
+else return Z5(n-1) + Z5(n-2);
+}
+
 Z1();
+Z2();
+Z3();
 
