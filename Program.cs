@@ -1,6 +1,6 @@
 ﻿void Z1 () 
 {
-Console.Write("1. ");
+Console.WriteLine("1. ");
 string [,] table = new string[2, 5];
 table[1, 2] = "cсло";
 for (int rows = 0; rows < 2; rows++) 
@@ -16,7 +16,7 @@ Z1();
 
 void Z2 () 
 {
-Console.Write("2. ");
+Console.WriteLine("2. ");
 int [,] table = new int[2, 5];
 for (int bar = 0; bar < 2; bar++)
 {
@@ -31,7 +31,7 @@ Z2();
 
 void Z3() 
 {
-Console.Write("3. ");
+Console.WriteLine("3. ");
 int [,] table = new int[25, 22];
 for (int bar = 0; bar < 25; bar++) 
 {
@@ -46,7 +46,7 @@ for (int bar = 0; bar < 25; bar++)
 }
 Z3();
 
-Console.Write("4. ");
+Console.WriteLine("4. ");
 double Z4(int n)
 {
     if(n == 1) return 1;
@@ -58,7 +58,7 @@ for (int i = 1; i < 40; i++)
     Console.WriteLine(Z4(i));
 }
 
-Console.Write("5. ");
+Console.WriteLine("5. ");
 int Z5(int n) // числа Фибоначчи
 {
     if(n == 1 || n == 2) return 1;
@@ -66,5 +66,5 @@ int Z5(int n) // числа Фибоначчи
 }
 for (int i = 1; i< 10; i++) 
 {
-    Console.WriteLine(Z5(i));
+    Console.WriteLine("f(" + i + ") = " + Z5(i));
 }
