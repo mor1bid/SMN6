@@ -40,13 +40,19 @@ for (int bar = 0; bar < 25; bar++)
     for (int col = 0; col < 22; col++) 
     {
         Console.Write($"{table[bar, col]} ");
-        if(table[bar, col] == 0) Console.Write($"");
+        if(table[bar, col] == 0) Console.Write($" ");
         else Console.Write($"+");
     }
     Console.WriteLine("");
 }
 }
 
+int Z4(int n) 
+{
+    if(n == 1) return 1;
+    else return n + Z4(n-1);
+}
+//Z4(n);
 Z3();
 Z2();
 Z1();
