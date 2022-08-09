@@ -30,11 +30,10 @@ Console.WriteLine("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine()), ani = num, bni = ani, cni = num;
 while (ani>0) 
 {
-    ani /= 2;
+    ani %= 2;
     bni = ani;
-    //cni /= 2;
-    bni -= cni;
     cni /= 2;
+    bni -= cni-1;
     Console.Write(bni);
 }
 }
