@@ -58,7 +58,7 @@ void Z3()
     for (int i = 0; i<si; i++) 
     {
         rayc [i] = ray [i];
-        Console.WriteLine();
         Console.Write(rayc[i]);
     }
 }
+Z3();
