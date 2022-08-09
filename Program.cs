@@ -39,4 +39,26 @@ while (ani>0)
     Console.Write(cni);
 }
 }
-Z2();
+//Z2();
+
+void Z3() 
+{
+    Random dom = new Random();
+    int si = dom.Next(2, 11); 
+    int [] ray = new int [si];
+    //int i = 0;
+    for (int i = 0; i<si; i++) 
+    {
+        int num = dom.Next(0, 11);
+        ray [i] = num;
+        Console.Write(ray[i]);
+    }
+    Console.WriteLine();
+    int [] rayc = new int [si];
+    for (int i = 0; i<si; i++) 
+    {
+        rayc [i] = ray [i];
+        Console.WriteLine();
+        Console.Write(rayc[i]);
+    }
+}
