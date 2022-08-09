@@ -27,14 +27,16 @@ else Console.WriteLine("Данный треугольник abc существу
 void Z2() 
 {
 Console.WriteLine("Введите число: ");
-int num = Convert.ToInt32(Console.ReadLine()), ani = num, bni = ani, cni = num;
+int num = Convert.ToInt32(Console.ReadLine()), 
+    ani = num, 
+    sdvig = 1, 
+    cni = 0;
 while (ani>0) 
 {
-    ani %= 2;
-    bni = ani;
-    cni /= 2;
-    bni -= cni-1;
-    Console.Write(bni);
+    cni += ani%2 * sdvig;
+    sdvig *= 10;
+    ani /= 2;
+    Console.Write(cni);
 }
 }
 Z2();
