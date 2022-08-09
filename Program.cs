@@ -33,7 +33,7 @@ if (ani>0)
     ani /= 2;
     bni -= cni;
     cni /= 2;
-    Console.Write(bni);
+    Console.Write(cni);
 }
 }
 Z2();
