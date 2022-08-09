@@ -32,8 +32,8 @@ if (ani>0)
 {
     ani /= 2;
     bni = ani;
-    bni -= cni;
     cni /= 2;
+    bni -= cni-1;
     Console.Write(bni);
 }
 }
