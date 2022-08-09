@@ -27,7 +27,7 @@ else Console.WriteLine("Данный треугольник abc существу
 void Z2() 
 {
 Console.WriteLine("Введите число: ");
-int num = Convert.ToInt32(Console.ReadLine()), ani = num, bni = ani, cni = num/2;
+int num = Convert.ToInt32(Console.ReadLine()), ani = num, bni = ani, cni = num;
 if (ani>0) 
 {
     ani /= 2;
