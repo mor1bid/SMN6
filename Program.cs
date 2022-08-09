@@ -33,7 +33,7 @@ while (ani>0)
     ani /= 2;
     bni = ani;
     cni /= 2;
-    bni -= cni-1;
+    bni -= cni;
     Console.Write(bni);
 }
 }
