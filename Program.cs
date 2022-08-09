@@ -28,7 +28,7 @@ void Z2()
 {
 Console.WriteLine("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine()), ani = num, bni = ani, cni = num;
-if (ani>=0) 
+while (ani>0) 
 {
     ani /= 2;
     bni = ani;
