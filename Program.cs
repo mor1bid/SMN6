@@ -25,15 +25,15 @@ else Console.Write("\b\b — " + count + " числа больше нуля.");
 void DZ2() 
 {
 Console.WriteLine("43. Введите значения двух прямых: ");
-int b1 = Convert.ToInt32(Console.ReadLine()),
-    k1 = Convert.ToInt32(Console.ReadLine()),
-    b2 = Convert.ToInt32(Console.ReadLine()),
-    k2 = Convert.ToInt32(Console.ReadLine());
+double  b1 = Convert.ToInt32(Console.ReadLine()),
+        k1 = Convert.ToInt32(Console.ReadLine()),
+        b2 = Convert.ToInt32(Console.ReadLine()),
+        k2 = Convert.ToInt32(Console.ReadLine());
 if (k1 == k2) Console.WriteLine("Заданные прямые параллельны.");
 else 
 {
-    int x = (b2 - b1)/(k1-k2);
-    int y = k1*x+b1;
+    double x = Math.Round((b2 - b1)/(k1-k2), 2);
+    double y = Math.Round(k1*x+b1, 2);
     Console.WriteLine("Заданные прямые пересекаются в точке (" + x + ", " + y + ")");
 }
 }
