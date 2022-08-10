@@ -3,7 +3,7 @@
 Random dom = new Random();
 int ent = dom.Next(1, 11);
 int [] ray = new int [ent];
-Console.WriteLine("Вы можете ввести " + ent + " раз.");
+Console.WriteLine("Вы можете ввести значение " + ent + " раз.");
 for (int i = 0; i<ent; i++) 
 {
     Console.WriteLine("Введите " + $"{i+1}" + " число:");
@@ -24,7 +24,16 @@ else Console.Write("\b\b — " + count + " числа больше нуля.");
 
 void DZ2() 
 {
-
+Console.WriteLine("43. Введите значения двух прямых: ");
+int b1 = Convert.ToInt32(Console.ReadLine()),
+    k1 = Convert.ToInt32(Console.ReadLine()),
+    b2 = Convert.ToInt32(Console.ReadLine()),
+    k2 = Convert.ToInt32(Console.ReadLine());
+if (k1 == k2) Console.WriteLine("Заданные прямые параллельны.");
+else 
+{
+    
+}
 }
 
 DZ1();
