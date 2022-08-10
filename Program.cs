@@ -17,7 +17,8 @@ for (int i = 0; i<ent; i++)
     if (ray[i] > 0) count++;
     Console.Write(ray[i] + ", ");
 }
-Console.Write("\b\b - " + count + " чисел больше нуля.");
+if (count>4) Console.Write("\b\b - " + count + " чисел больше нуля.");
+else Console.Write("\b\b - " + count + " числа больше нуля.");
 }
 
 void DZ2() 
