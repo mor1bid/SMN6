@@ -20,7 +20,7 @@ for (int i = 0; i<ent; i++)
     if (ray[i] > 0) count++;
     Console.Write(ray[i] + ", ");
 }
-if (count>4 && count == 0) Console.Write("\b\b — " + count + " чисел больше нуля.");
+if (count>4 || count == 0) Console.Write("\b\b — " + count + " чисел больше нуля.");
 else if (count==1) Console.Write("\b\b — " + count + " число больше нуля.");
 else Console.Write("\b\b — " + count + " числа больше нуля.");
 }
