@@ -3,7 +3,7 @@
 Random dom = new Random();
 int ent = dom.Next(1, 11);
 int [] ray = new int [ent];
-if (ent>4 && ent<=1) Console.WriteLine("Вы можете ввести значение " + ent + " раз.");
+if (ent>4 || ent<=1) Console.WriteLine("Вы можете ввести значение " + ent + " раз.");
 else Console.WriteLine("Вы можете ввести значение " + ent + " раза.");
 for (int i = 0; i<ent; i++) 
 {
