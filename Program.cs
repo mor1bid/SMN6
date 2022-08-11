@@ -7,7 +7,7 @@ if (ent>4 && ent<=1) Console.WriteLine("Вы можете ввести знач�
 else Console.WriteLine("Вы можете ввести значение " + ent + " раза.");
 for (int i = 0; i<ent; i++) 
 {
-    Console.WriteLine("Введите " + $"{i+1}" + " число:");
+    Console.WriteLine("Введите " + $"{i+1}" + "-е число:");
     int num = Convert.ToInt32(Console.ReadLine());
     ray[i] = num;
 }
