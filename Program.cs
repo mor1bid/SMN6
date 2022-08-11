@@ -13,7 +13,7 @@ for (int i = 0; i<ent; i++)
 }
 int count = 0;
 Console.WriteLine();
-Console.Write("41. Из чисел: ");
+Console.Write("41. Из " + ent + " чисел: ");
 for (int i = 0; i<ent; i++) 
 {
     if (ray[i] > 0) count++;
@@ -23,6 +23,7 @@ if (count>4) Console.Write("\b\b — " + count + " чисел больше ну�
 else Console.Write("\b\b — " + count + " числа больше нуля.");
 }
 
+Console.WriteLine();
 void DZ2() 
 {
 Console.WriteLine("43. Введите значения двух прямых: ");
