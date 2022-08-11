@@ -29,14 +29,15 @@ double  b1 = Convert.ToInt32(Console.ReadLine()),
         k1 = Convert.ToInt32(Console.ReadLine()),
         b2 = Convert.ToInt32(Console.ReadLine()),
         k2 = Convert.ToInt32(Console.ReadLine());
-if (k1 == k2) Console.WriteLine("Заданные прямые параллельны.");
+if (k1 == k2 && b1 == b2) Console.WriteLine("Заданные прямые совпадают друг с другом.");
+else if (k1 == k2) Console.WriteLine("Заданные прямые параллельны.");
 else 
 {
     double x = Math.Round((b2 - b1)/(k1-k2), 2);
-    double y = Math.Round(k1*(b2 - b1)/(k1-k2)+b1, 2);
+    double y = Math.Round(k1*x+b1, 2);
     Console.WriteLine("Заданные прямые пересекаются в точке (" + x + ", " + y + ")");
 }
 }
 
-//DZ1();
+DZ1();
 DZ2();
